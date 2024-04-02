@@ -24,7 +24,7 @@ import run.freshr.common.data.LogstashData;
  * @apiNote Logstash 설정
  * @since 2024. 3. 28. 오전 10:45:11
  */
-@DependsOn("LogstashAutoConfiguration")
+@DependsOn("LogstashData")
 @Configuration
 public class LogstashConfiguration {
 
