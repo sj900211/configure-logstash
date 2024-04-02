@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 import run.freshr.common.data.LogstashData;
 
 /**
@@ -23,6 +24,7 @@ import run.freshr.common.data.LogstashData;
  * @apiNote Logstash 설정
  * @since 2024. 3. 28. 오전 10:45:11
  */
+@DependsOn("LogstashAutoConfiguration")
 @Configuration
 public class LogstashConfiguration {
 

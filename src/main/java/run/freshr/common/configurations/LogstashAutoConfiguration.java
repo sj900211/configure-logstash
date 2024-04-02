@@ -17,7 +17,7 @@ import run.freshr.common.properties.LogstashProperties;
  *          기본 설정 값으로 Logstash 데이터 객체 설정
  * @since 2024. 3. 28. 오전 10:45:11
  */
-@Configuration(proxyBeanMethods = false)
+@Configuration(value="LogstashAutoConfiguration", proxyBeanMethods = false)
 @EnableConfigurationProperties(LogstashProperties.class)
 public class LogstashAutoConfiguration {
 
